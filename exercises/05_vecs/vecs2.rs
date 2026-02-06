@@ -32,6 +32,9 @@ fn vec_map(input: &[i32]) -> Vec<i32> {
 
 fn main() {
     // You can optionally experiment here.
+    let input = [2, 4, 6, 8, 10];
+    let ans = vec_map(&input);
+    println!("{:?}", ans);
 }
 
 #[cfg(test)]

@@ -5,17 +5,18 @@ fn bigger(a: i32, b: i32) -> i32 {
     // - another function call
     // - additional variables
     if a>b{
-        return a;
+        a
     }
     else if a<b{
-        return b;
+        b
     }
     else{
-        return a;
+        a
     }
 }
 fn main() {
     // You can optionally experiment here.
+    println!("{}", bigger(10, 8));
 }
 
 // Don't mind this for now :)

@@ -1,5 +1,13 @@
 // Characters (`char`)
-
+fn is_alphabetic(c: char) -> bool {
+    if c.is_alphabetic() {
+        true
+    } else if c.is_numeric() {
+        false
+    } else {
+        false
+    }
+}
 fn main() {
     // Note the _single_ quotes, these are different from the double quotes
     // you've been seeing around.
@@ -18,11 +26,11 @@ fn main() {
     // from a different language than your own, try an emoji 😉
     // let your_character = '';
     let your_character = 'a';
-    if your_character.is_alphabetic() {
-        println!("Alphabetical!");
-    } else if your_character.is_numeric() {
-        println!("Numerical!");
-    } else {
-        println!("Neither alphabetic nor numeric!");
-    }
+    let digit = '1';
+    let special = '!';
+    let emoji = '😉';
+    println!("{}", is_alphabetic(your_character));
+    println!("{}", is_alphabetic(digit));
+    println!("{}", is_alphabetic(special));
+    println!("{}", is_alphabetic(emoji));
 }

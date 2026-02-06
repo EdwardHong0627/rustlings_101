@@ -1,5 +1,7 @@
 fn main() {
-    // You can optionally experiment here.
+    let numbers = (1, 2, 3);
+    let second = numbers.1;
+    println!("{}", second);
 }
 
 #[cfg(test)]
